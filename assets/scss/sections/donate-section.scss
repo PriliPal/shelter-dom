@@ -1,0 +1,118 @@
+@import "../variables.scss";
+
+.donate-section {
+  background-color: $color-light-l;
+  padding: 80px 40px 100px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+
+  &-content {
+    margin-left: 30px;
+    max-width: 380px;
+
+    &-title {
+      color: $color-dark-l;
+      //font-family: Georgia;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 45.5px */
+      letter-spacing: 2.1px;
+      margin: 0;
+    }
+
+    &-description {
+      color: $color-dark-l;
+      //font-family: Georgia;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 16.5px */
+      letter-spacing: 0.9px;
+      margin: 20px 0 0 0;
+    }
+
+    &-card {
+      padding: 10px 15px;
+      border-radius: 9px;
+      background: $primary-color;
+      transition: $default-transition;
+      white-space: nowrap;
+      display: flex;
+      align-self: center;
+      width: fit-content;
+      margin: 20px 0;
+
+      &:hover {
+        background-color: $buttons-hover-color;
+      }
+
+      &-number {
+        color: $color-dark-l;
+        //font-family: Georgia;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%; /* 23px */
+        letter-spacing: 1.2px;
+        margin: 0 0 0 15px;
+      }
+    }
+
+    &-subtext {
+      color: $color-dark-m;
+      //font-family: Arial;
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 18px; /* 150% */
+    }
+
+  }
+}
+
+
+
+@media screen and (width < 1280px) {
+
+  .donate-section {
+    flex-wrap: wrap;
+
+    &-image {
+      margin-top: 60px;
+    }
+  }
+
+}
+
+@media screen and (width < 768px) {
+
+  .donate-section {
+    text-align: center;
+    padding: 40px 10px;
+
+    &-content {
+      margin-left: 0;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-title {
+        font-size: 25px;
+      }
+    }
+
+    &-image {
+      margin-top: 42px;
+      width: 260px;
+      height: 135.2px;
+    }
+  }
+
+}

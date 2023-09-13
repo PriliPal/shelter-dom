@@ -1,0 +1,30 @@
+@import "variables.scss";
+@import "sections/start-section.scss";
+@import "sections/about-section.scss";
+@import "sections/slider-section.scss";
+@import "sections/help-section.scss";
+@import "sections/donate-section.scss";
+@import "sections/footer-section.scss";
+@import "sections/header-secondary.scss";
+@import "sections/pets-list-section.scss";
+
+.container {
+  max-width: $container-width-l;
+  margin: 0 auto;
+
+  -webkit-box-shadow: 0 0 28px -3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 0 28px -3px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 28px -3px rgba(34, 60, 80, 0.2);
+}
+
+@media screen and (width < 1280px) {
+  .container {
+    min-width: $container-width-m;
+  }
+}
+
+@media screen and (width < 768px) {
+  .container {
+    min-width: $container-width-s;
+  }
+}

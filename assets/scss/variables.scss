@@ -1,0 +1,32 @@
+// buttons
+
+$buttons-long-padding : 10px 40px;
+$buttons-round-height-width : 40px;
+$buttons-border-width : 2px;
+$buttons-border-color : rgba(241, 205, 179, 1);
+$buttons-border-radius : 100px;
+$buttons-background-color : rgba(241, 205, 179, 1);
+$buttons-transparent-background-color : rgba(253, 220, 196, 0);
+$buttons-hover-color : rgba(253, 220, 196, 1);
+$buttons-inactive-color : #CDCDCD;
+
+// transitions
+
+$default-transition : 0.1s;
+$long-transition : 0.2s;
+
+// breakpoints
+
+$container-width-l : 1280px;
+$container-width-m : 768px;
+$container-width-s : 320px;
+
+// colors
+
+$primary-color : #F1CDB3;
+$color-light-l : #F6F6F6;
+$color-light-s : #FAFAFA;
+$color-dark-s : #CDCDCD;
+$color-dark-m : #B2B2B2;
+$color-dark-l : #545454;
+$color-dark-xl : #4C4C4C;

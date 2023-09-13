@@ -1,0 +1,64 @@
+@import "../variables.scss";
+
+.pets-list-section {
+  background-color: $color-light-l;
+  padding: 80px 40px 100px 40px;
+
+  &-title {
+    color: $color-dark-l;
+    text-align: center;
+    //font-family: Georgia;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+    margin: 0;
+  }
+
+  &-cards {
+    margin-top: 45px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  &-card {
+    margin: 15px 5px;
+  }
+
+  &-nav {
+    margin-top: 45px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &-button {
+      margin: 0 5px;
+    }
+
+    &-block {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (width < 1280px) {
+
+  .pets-list-section {
+    padding: 60px 30px 70px 30px;
+  }
+
+}
+
+@media screen and (width < 768px) {
+
+  .pets-list-section {
+    padding: 40px 10px;
+  }
+
+}

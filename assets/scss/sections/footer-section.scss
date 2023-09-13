@@ -1,0 +1,137 @@
+@import "../variables.scss";
+
+.footer-section {
+  background: url("public/footer-gradient-background.png");
+  background-size: 100% 100%;
+  padding: 40px 40px 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &-contacts {
+    width: 278px;
+
+    &-title {
+      color: white;
+      //font-family: Georgia;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 45.5px */
+      letter-spacing: 2.1px;
+    }
+
+    &-email {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+
+      &-text {
+        color: $primary-color;
+        //font-family: Georgia;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%; /* 23px */
+        letter-spacing: 1.2px;
+        margin: 0 0 0 20px;
+      }
+    }
+
+    &-phone {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+
+      &-text {
+        color: $primary-color;
+        //font-family: Georgia;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%; /* 23px */
+        letter-spacing: 1.2px;
+        margin: 0 0 0 20px;
+      }
+    }
+  }
+
+  &-locations {
+    width: 302px;
+
+    &-title {
+      color: white;
+      //font-family: Georgia;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 45.5px */
+      letter-spacing: 2.1px;
+    }
+
+    &-boston {
+      display: flex;
+      align-items: center;
+      margin-top: 33px;
+
+      &-text {
+        color: $primary-color;
+        //font-family: Georgia;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%; /* 23px */
+        letter-spacing: 1.2px;
+        margin: 0 0 0 20px;
+      }
+    }
+
+    &-london {
+      display: flex;
+      align-items: center;
+      margin-top: 33px;
+
+      &-text {
+        color: $primary-color;
+        //font-family: Georgia;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%; /* 23px */
+        letter-spacing: 1.2px;
+        margin: 0 0 0 20px;
+      }
+    }
+  }
+
+}
+
+@media screen and (width < 1280px) {
+
+  .footer-section {
+    padding: 0 30px;
+
+    &-image {
+      margin-top: 40px;
+    }
+  }
+
+}
+
+@media screen and (width < 768px) {
+
+  .footer-section {
+    padding: 30px 10px 0 10px;
+
+    &-contacts-title {
+      font-size: 25px;
+    }
+
+    &-locations-title {
+
+    }
+  }
+
+}

@@ -1,0 +1,58 @@
+@import "../variables.scss";
+
+.slider-section {
+  background-color: $color-light-l;
+  padding: 80px 40px 100px 40px;
+
+  &-title {
+    color: $color-dark-l;
+    text-align: center;
+    //font-family: Georgia;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+  }
+
+  &-carousel {
+    margin-top: 60px;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+
+    &:active {
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+    }
+  }
+
+  &-button {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (width < 1280px) {
+
+  .slider-section {
+    padding: 80px 30px 100px 30px;
+  }
+
+}
+
+@media screen and (width < 768px) {
+
+  .slider-section {
+    padding: 40px 15px;
+
+    &-title {
+      font-size: 25px;
+    }
+  }
+
+}

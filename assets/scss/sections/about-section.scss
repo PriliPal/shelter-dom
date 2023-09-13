@@ -1,0 +1,59 @@
+@import "../variables.scss";
+
+.about-section {
+  background-color: white;
+  padding: 80px 40px 100px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+
+  &-content {
+
+    max-width: 430px;
+
+    &-title {
+      color: $color-dark-l;
+      //font-family: Georgia;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 45.5px */
+      letter-spacing: 2.1px;
+    }
+
+    &-description {
+      color: $color-dark-xl;
+      //font-family: Arial;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 24px */
+
+      display: block;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (width < 768px) {
+
+  .about-section {
+    flex-wrap: wrap;
+    padding: 40px 10px;
+
+    &-content-title {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+
+  .about-section-image {
+    width: 260px;
+    height: 353.6px;
+
+    margin-top: 80px;
+  }
+
+}

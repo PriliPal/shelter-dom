@@ -1,0 +1,12 @@
+@import "variables";
+
+.carousel__prev--disabled, .carousel__next--disabled {
+  cursor: default;
+  color: #bcbcbf;
+  opacity: 1;
+}
+
+.carousel__prev--disabled:hover, .carousel__next--disabled:hover {
+  color: #bcbcbf;
+  opacity: 1;
+}

@@ -1,0 +1,128 @@
+@import "assets/scss/variables";
+
+.button-primary-long {
+  font-size: 17px;
+  font-weight: 400;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: $buttons-long-padding;
+  width: fit-content;
+
+  border: $buttons-border-color solid $buttons-border-width;
+  border-radius: $buttons-border-radius;
+  background-color: $buttons-background-color;
+
+  transition: $default-transition;
+
+  &:hover {
+    background-color: $buttons-hover-color;
+    border-color: $buttons-hover-color;
+  }
+}
+
+.button-secondary-long {
+  font-size: 17px;
+  font-weight: 400;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: $buttons-long-padding;
+  width: fit-content;
+
+  border: $buttons-border-color solid $buttons-border-width;
+  border-radius: $buttons-border-radius;
+  background-color: $buttons-transparent-background-color;
+
+  transition: $default-transition;
+
+  &:hover {
+    background-color: $buttons-hover-color;
+    border-color: $buttons-hover-color;
+  }
+}
+
+.button-round-pag-active {
+  font-size: 17px;
+  font-weight: 400;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: $buttons-round-height-width;
+  height: $buttons-round-height-width;
+
+  border: $buttons-border-color solid $buttons-border-width;
+  border-radius: $buttons-border-radius;
+
+  background-color: $buttons-transparent-background-color;
+  transition: $default-transition;
+
+  &:hover {
+    background-color: $buttons-hover-color;
+    border-color: $buttons-hover-color;
+  }
+}
+
+.button-round-pag-inactive {
+  color: $color-dark-s;
+  text-align: center;
+
+  //font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 23px */
+  letter-spacing: 1.2px;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: $buttons-round-height-width;
+  height: $buttons-round-height-width;
+
+  border: $buttons-inactive-color solid $buttons-border-width;
+  border-radius: $buttons-border-radius;
+
+  background-color: $buttons-transparent-background-color;
+  transition: $default-transition;
+
+  &:hover {
+    background-color: $buttons-transparent-background-color;
+    border-color: $buttons-inactive-color;
+  }
+}
+
+.button-round-nav {
+  font-size: 17px;
+  font-weight: 400;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: $buttons-round-height-width;
+  height: $buttons-round-height-width;
+
+  border: $buttons-border-color solid $buttons-border-width;
+  border-radius: $buttons-border-radius;
+
+  background-color: $buttons-background-color;
+  transition: $default-transition;
+
+  &:hover {
+    background-color: $buttons-hover-color;
+    border-color: $buttons-hover-color;
+  }
+}
